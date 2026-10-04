@@ -39,15 +39,22 @@ tailwind.config = {
       <span class="font-display font-bold text-white text-lg tracking-tight">AI&nbsp;Radar</span>
       <span class="hidden sm:inline text-silver/60 text-xs chip font-semibold ml-1">ESTAT DE L'ART IA</span>
     </a>
-    <div class="flex items-center gap-5 text-sm text-silver hidden md:flex">
-      <a href="#fonaments" class="hover:text-gold transition">Fonaments</a>
-      <a href="#agents" class="hover:text-gold transition">Agents</a>
-      <a href="#adopcio" class="hover:text-gold transition">Adopció</a>
-      <a href="#prospectiva" class="hover:text-gold transition">Prospectiva</a>
-      <a href="#recursos" class="hover:text-gold transition">Recursos</a>
-      <a href="#referencies" class="hover:text-gold transition">Referències</a>
+    <div id="navLinks" class="flex items-center gap-5 text-sm text-silver hidden md:flex">
+      <a href="#fonaments" data-i18n="nav_fonaments">Fonaments</a>
+      <a href="#agents" data-i18n="nav_agents">Agents</a>
+      <a href="#adopcio" data-i18n="nav_adopcio">Adopció</a>
+      <a href="#prospectiva" data-i18n="nav_prospectiva">Prospectiva</a>
+      <a href="#recursos" data-i18n="nav_recursos">Recursos</a>
+      <a href="#referencies" data-i18n="nav_referencies">Referències</a>
     </div>
-    <a href="https://solutionpartner.github.io/business-ai-os/" class="bg-gold hover:bg-gold-deep text-night font-semibold text-sm px-4 py-2 rounded-lg transition">Soluciona la teva IA</a>
+    <div class="flex items-center gap-3">
+      <select id="langSel" class="bg-night text-silver border border-white/15 rounded-lg text-sm px-2 py-1.5 cursor-pointer hover:border-gold/50 transition">
+        <option value="ca" selected>CA</option>
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+      </select>
+      <a href="https://solutionpartner.github.io/autodiagnostic-ia/" data-i18n="nav_cta" class="bg-gold hover:bg-gold-deep text-night font-semibold text-sm px-4 py-2 rounded-lg transition whitespace-nowrap">Demana el teu diagnòstic</a>
+    </div>
   </div>
 </nav>
 
@@ -56,19 +63,19 @@ tailwind.config = {
   <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(231,196,125,.16),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(28,54,87,.5),transparent_60%)]"></div>
   <div class="relative max-w-7xl mx-auto px-6 py-24 lg:py-32">
     <div class="max-w-3xl">
-      <span class="chip text-gold text-xs font-semibold bg-gold/10 border border-gold/30 px-3 py-1 rounded-full uppercase">El teu radar de la intel·ligència artificial</span>
+      <span class="chip text-gold text-xs font-semibold bg-gold/10 border border-gold/30 px-3 py-1 rounded-full uppercase" data-i18n="hero_badge">El teu radar de la intel·ligència artificial</span>
       <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mt-6">
-        Entén l'estat de l'art de la IA,<br>
-        <span class="text-gold">no et deixis endur pel soroll.</span>
+        <span data-i18n="hero_h1a">Entén l'estat de l'art de la IA,</span><br>
+        <span class="text-gold" data-i18n="hero_h1b">no et deixis endur pel soroll.</span>
       </h1>
-      <p class="mt-6 text-silver text-lg leading-relaxed max-w-2xl">
+      <p class="mt-6 text-silver text-lg leading-relaxed max-w-2xl" data-i18n="hero_p">
         Una selecció comentada de models, arquitectures i tendències per entendre l'evolució de la
         intel·ligència artificial. A <strong class="text-white">SolutionPartner</strong> contextualitzem cada
         recurs per connectar les possibilitats tecnològiques amb les necessitats reals de les empreses.
       </p>
       <div class="mt-8 flex flex-wrap gap-3">
-        <a href="#fonaments" class="bg-gold hover:bg-gold-deep text-night font-semibold px-6 py-3 rounded-lg transition">Comença per aquí</a>
-        <a href="#referencies" class="border border-white/25 hover:border-gold/60 hover:text-gold px-6 py-3 rounded-lg transition">Totes les fonts</a>
+        <a href="#fonaments" data-i18n="hero_cta1" class="bg-gold hover:bg-gold-deep text-night font-semibold px-6 py-3 rounded-lg transition">Comença per aquí</a>
+        <a href="#referencies" data-i18n="hero_cta2" class="border border-white/25 hover:border-gold/60 hover:text-gold px-6 py-3 rounded-lg transition">Totes les fonts</a>
       </div>
     </div>
     <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
@@ -84,9 +91,9 @@ tailwind.config = {
 <section id="fonaments" class="py-20 lg:py-28 bg-white">
   <div class="max-w-7xl mx-auto px-6">
     <div class="max-w-2xl mb-14">
-      <span class="chip text-gold-deep text-xs font-semibold uppercase">01 · Fonaments</span>
-      <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3">Què és la intel·ligència artificial?</h2>
-      <p class="mt-4 text-ink/70 text-lg leading-relaxed">Abans de parlar de tendències cal situar les famílies i conceptes que formen el terreny. Entendre les capes de la IA et dona el mapa per orientar-te.</p>
+      <span class="chip text-gold-deep text-xs font-semibold uppercase" data-i18n="s1_tag">01 · Fonaments</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3" data-i18n="s1_h">Què és la intel·ligència artificial?</h2>
+      <p class="mt-4 text-ink/70 text-lg leading-relaxed" data-i18n="s1_p">Abans de parlar de tendències cal situar les famílies i conceptes que formen el terreny. Entendre les capes de la IA et dona el mapa per orientar-te.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8 items-stretch">
@@ -96,8 +103,8 @@ tailwind.config = {
           <img src="images/layers-of-ai.jpg" alt="Infografia en forma d'iceberg amb sis nivells: IA clàssica, aprenentatge automàtic, xarxes neuronals, aprenentatge profund, IA generativa i IA agèntica." class="w-full max-h-[420px] object-contain" loading="lazy">
         </div>
         <div class="p-6 flex-1 flex flex-col">
-          <h3 class="font-display font-bold text-xl">Les capes de la intel·ligència artificial</h3>
-          <p class="mt-3 text-ink/75 leading-relaxed flex-1">Una visió de les principals famílies de la IA, des dels sistemes simbòlics fins a la generativa i els agents. La infografia ajuda a situar les aplicacions actuals dins d'un conjunt més ampli de tècniques d'aprenentatge, representació del coneixement i automatització.</p>
+          <h3 class="font-display font-bold text-xl" data-i18n="c1_h">Les capes de la intel·ligència artificial</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed flex-1" data-i18n="c1_p">Una visió de les principals famílies de la IA, des dels sistemes simbòlics fins a la generativa i els agents. La infografia ajuda a situar les aplicacions actuals dins d'un conjunt més ampli de tècniques d'aprenentatge, representació del coneixement i automatització.</p>
           <div class="mt-5 pt-4 border-t border-night/10 flex items-center justify-between">
             <span class="text-xs text-ink/50">Hamza Khalid · Layers of AI</span>
             <a href="#referencies" class="text-gold-deep hover:text-night font-semibold text-sm">Font →</a>
@@ -111,8 +118,8 @@ tailwind.config = {
           <img src="images/genai-vs-agentic.jpg" alt="Comparativa de tres columnes sobre IA generativa, IA agèntica i agents, amb fluxos de treball i taula de característiques." class="w-full max-h-[420px] object-contain" loading="lazy">
         </div>
         <div class="p-6 flex-1 flex flex-col">
-          <h3 class="font-display font-bold text-xl">Generativa, agents o agèntica?</h3>
-          <p class="mt-3 text-ink/75 leading-relaxed flex-1">Tres conceptes que convé distingir. La IA generativa produeix contingut; els agents utilitzen eines per avançar cap a un objectiu; la IA agèntica descriu sistemes amb planificació i actuació autònoma. A la nostra explicació, fixem els matisos que als diagrames populars sovint es barregen.</p>
+          <h3 class="font-display font-bold text-xl" data-i18n="c2_h">Generativa, agents o agèntica?</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed flex-1" data-i18n="c2_p">Tres conceptes que convé distingir. La IA generativa produeix contingut; els agents utilitzen eines per avançar cap a un objectiu; la IA agèntica descriu sistemes amb planificació i actuació autònoma. A la nostra explicació, fixem els matisos que als diagrames populars sovint es barregen.</p>
           <div class="mt-5 pt-4 border-t border-night/10 flex items-center justify-between">
             <span class="text-xs text-ink/50">Comparativa · autoria pendent de confirmar</span>
             <a href="#referencies" class="text-gold-deep hover:text-night font-semibold text-sm">Font →</a>
@@ -126,9 +133,9 @@ tailwind.config = {
 <section id="agents" class="py-20 lg:py-28 bg-night text-white">
   <div class="max-w-7xl mx-auto px-6">
     <div class="max-w-2xl mb-14">
-      <span class="chip text-gold text-xs font-semibold uppercase">02 · Agents &amp; arquitectura</span>
-      <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3">Com es construeix un agent d'IA</h2>
-      <p class="mt-4 text-silver/80 text-lg leading-relaxed">L'agent és la unitat que passa de "respondre" a "fer". Aquí desglossem els components que el fan funcionar: el model, la memòria, les eines i els controls.</p>
+      <span class="chip text-gold text-xs font-semibold uppercase" data-i18n="s2_tag">02 · Agents &amp; arquitectura</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3" data-i18n="s2_h">Com es construeix un agent d'IA</h2>
+      <p class="mt-4 text-silver/80 text-lg leading-relaxed" data-i18n="s2_p">L'agent és la unitat que passa de "respondre" a "fer". Aquí desglossem els components que el fan funcionar: el model, la memòria, les eines i els controls.</p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -136,8 +143,8 @@ tailwind.config = {
       <article class="card bg-white/5 rounded-2xl overflow-hidden border border-white/10 flex flex-col">
         <div class="bg-night/40 grid place-items-center"><img src="images/ai-agent-terms.jpg" alt="Nou panells sobre harness, memòria i estat, RAG, MCP, skills, guardrails, avaluacions, A2A i sistemes multiagent." class="w-full max-h-[380px] object-contain" loading="lazy"></div>
         <div class="p-6 flex-1 flex flex-col">
-          <h3 class="font-display font-bold text-xl">9 termes per entendre els agents</h3>
-          <p class="mt-3 text-silver/80 leading-relaxed flex-1">Entendre un agent exigeix mirar més enllà del model: l'entorn d'execució, la memòria, el RAG, els protocols de connexió, les instruccions reutilitzables i els controls de seguretat. Un glossari divulgatiu, no una garantia tècnica.</p>
+          <h3 class="font-display font-bold text-xl" data-i18n="c3_h">9 termes per entendre els agents</h3>
+          <p class="mt-3 text-silver/80 leading-relaxed flex-1" data-i18n="c3_p">Entendre un agent exigeix mirar més enllà del model: l'entorn d'execució, la memòria, el RAG, els protocols de connexió, les instruccions reutilitzables i els controls de seguretat. Un glossari divulgatiu, no una garantia tècnica.</p>
           <div class="mt-5 pt-4 border-t border-white/10 flex items-center justify-between"><span class="text-xs text-silver/50">GenAI Works · 9 AI Agent Terms</span><a href="#referencies" class="text-gold hover:text-gold-deep font-semibold text-sm">Font →</a></div>
         </div>
       </article>
@@ -146,8 +153,8 @@ tailwind.config = {
       <article class="card bg-white/5 rounded-2xl overflow-hidden border border-white/10 flex flex-col">
         <div class="bg-night/40 grid place-items-center"><img src="images/agentic-framework.jpg" alt="Mapa concèntric d'IA, deep learning, IA generativa, agents i IA agèntica, envoltat de capacitats operatives i controls." class="w-full max-h-[380px] object-contain" loading="lazy"></div>
         <div class="p-6 flex-1 flex flex-col">
-          <h3 class="font-display font-bold text-xl">IA agèntica: un marc complet</h3>
-          <p class="mt-3 text-silver/80 leading-relaxed flex-1">El mapa relaciona models, generació de contingut, eines, memòria i orquestració amb els mecanismes per operar agents: supervisió humana, recuperació d'errors, observabilitat i governança. Una guia per a autonomia controlada, no un estàndard tancat.</p>
+          <h3 class="font-display font-bold text-xl" data-i18n="c4_h">IA agèntica: un marc complet</h3>
+          <p class="mt-3 text-silver/80 leading-relaxed flex-1" data-i18n="c4_p">El mapa relaciona models, generació de contingut, eines, memòria i orquestració amb els mecanismes per operar agents: supervisió humana, recuperació d'errors, observabilitat i governança. Una guia per a autonomia controlada, no un estàndard tancat.</p>
           <div class="mt-5 pt-4 border-t border-white/10 flex items-center justify-between"><span class="text-xs text-silver/50">@PythonDvz · Agentic AI</span><a href="#referencies" class="text-gold hover:text-gold-deep font-semibold text-sm">Font →</a></div>
         </div>
       </article>
@@ -156,8 +163,8 @@ tailwind.config = {
       <article class="card bg-white/5 rounded-2xl overflow-hidden border border-white/10 flex flex-col">
         <div class="bg-night/40 grid place-items-center"><img src="images/agents-cheatsheet.jpg" alt="Guia d'agents d'IA amb model de llenguatge, eines, orquestració, protocols MCP i A2A i opcions de construcció." class="w-full max-h-[380px] object-contain" loading="lazy"></div>
         <div class="p-6 flex-1 flex flex-col">
-          <h3 class="font-display font-bold text-xl">Guia pràctica d'un agent d'IA</h3>
-          <p class="mt-3 text-silver/80 leading-relaxed flex-1">Una introducció pràctica als components que permeten a un agent interpretar una petició, consultar dades i executar accions, amb les vies de construcció possibles: des d'entorns visuals fins a desenvolupament amb codi.</p>
+          <h3 class="font-display font-bold text-xl" data-i18n="c5_h">Guia pràctica d'un agent d'IA</h3>
+          <p class="mt-3 text-silver/80 leading-relaxed flex-1" data-i18n="c5_p">Una introducció pràctica als components que permeten a un agent interpretar una petició, consultar dades i executar accions, amb les vies de construcció possibles: des d'entorns visuals fins a desenvolupament amb codi.</p>
           <div class="mt-5 pt-4 border-t border-white/10 flex items-center justify-between"><span class="text-xs text-silver/50">GenAI Works · AI Agents Cheat Sheet · set. 2026</span><a href="#referencies" class="text-gold hover:text-gold-deep font-semibold text-sm">Font →</a></div>
         </div>
       </article>
@@ -166,8 +173,8 @@ tailwind.config = {
       <article class="card bg-white/5 rounded-2xl overflow-hidden border border-white/10 flex flex-col">
         <div class="bg-night/40 grid place-items-center"><img src="images/claude-skills.jpg" alt="Selecció de tretze skills per a Claude, amb dues eines addicionals per trobar i crear skills." class="w-full max-h-[380px] object-contain" loading="lazy"></div>
         <div class="p-6 flex-1 flex flex-col">
-          <h3 class="font-display font-bold text-xl">Skills: instruccions reutilitzables</h3>
-          <p class="mt-3 text-silver/80 leading-relaxed flex-1">Les skills permeten reutilitzar instruccions i procediments per a tasques recurrents: planificació, recerca, documentació, disseny, depuració i proves. És la via perquè un assistent treballi amb més consistència. Nosaltres en construïm a mida per a cada client.</p>
+          <h3 class="font-display font-bold text-xl" data-i18n="c6_h">Skills: instruccions reutilitzables</h3>
+          <p class="mt-3 text-silver/80 leading-relaxed flex-1" data-i18n="c6_p">Les skills permeten reutilitzar instruccions i procediments per a tasques recurrents: planificació, recerca, documentació, disseny, depuració i proves. És la via perquè un assistent treballi amb més consistència. Nosaltres en construïm a mida per a cada client.</p>
           <div class="mt-5 pt-4 border-t border-white/10 flex items-center justify-between"><span class="text-xs text-silver/50">GenAI Works · 13 Claude Skills</span><a href="#referencies" class="text-gold hover:text-gold-deep font-semibold text-sm">Font →</a></div>
         </div>
       </article>
@@ -179,28 +186,79 @@ tailwind.config = {
 <section id="adopcio" class="py-20 lg:py-28 bg-cream">
   <div class="max-w-7xl mx-auto px-6">
     <div class="max-w-2xl mb-14">
-      <span class="chip text-gold-deep text-xs font-semibold uppercase">03 · Adopció &amp; maduresa</span>
-      <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3">On som realment, no on té l'orella el bombo</h2>
-      <p class="mt-4 text-ink/70 text-lg leading-relaxed">L'interès per la IA és alt, però l'adopció efectiva té un ritme propi. Aquestes dades ajuden a separar el soroll del que està madur.</p>
+      <span class="chip text-gold-deep text-xs font-semibold uppercase" data-i18n="s3_tag">03 · Adopció &amp; maduresa</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3" data-i18n="s3_h">On som realment, no on té l'orella el bombo</h2>
+      <p class="mt-4 text-ink/70 text-lg leading-relaxed" data-i18n="s3_p">L'interès per la IA és alt, però l'adopció efectiva té un ritme propi. Aquestes dades ajuden a separar el soroll del que està madur.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8">
-      <!-- Agents peak -->
+      <!-- Agents peak (SVG propi, estil SPAI — no reproduïm el gràfic de Gartner) -->
       <article class="card bg-white rounded-2xl overflow-hidden border border-night/5 flex flex-col">
-        <div class="grid place-items-center"><img src="images/agents-peak.jpg" alt="Hype Cycle amb els agents al pic d'expectatives i dos indicadors: 40% de preparació i 81% d'inici de pilots o desplegaments." class="w-full max-h-[380px] object-contain" loading="lazy"></div>
+        <div class="bg-night/5 grid place-items-center p-4">
+          <svg viewBox="0 0 420 240" class="w-full max-w-full" role="img" aria-label="Corba d'expectatives pròpia: els agents d'IA al pic del cicle, amb 40% de preparació i 81% amb pilots o desplegaments.">
+            <style>text{font-family:Inter,sans-serif}</style>
+            <!-- corba hype genèrica (dibuix propi) -->
+            <path d="M40,200 C90,195 110,180 130,150 S180,60 205,72 250,210 300,150 340,95 380,100" fill="none" stroke="#14243A" stroke-width="2.5"/>
+            <!-- línies de fases -->
+            <g stroke="#C9A45C" stroke-width="1" stroke-dasharray="3 3" opacity=".6">
+              <line x1="170" y1="15" x2="170" y2="215"/><line x1="245" y1="15" x2="245" y2="215"/><line x1="305" y1="15" x2="305" y2="215"/><line x1="360" y1="15" x2="360" y2="215"/>
+            </g>
+            <text x="30" y="190" font-size="9" fill="#14243A">Innovation Trigger</text>
+            <text x="195" y="18" font-size="9" fill="#14243A">Pic d'expectatives</text>
+            <text x="250" y="218" font-size="9" fill="#14243A">Vall / pujada</text>
+            <text x="335" y="18" font-size="9" fill="#14243A">Maduresa</text>
+            <!-- marcador agents al pic -->
+            <circle cx="205" cy="72" r="7" fill="#E7C47D" stroke="#0B1D32" stroke-width="2"/>
+            <g font-size="12" font-weight="bold" fill="#0B1D32">
+              <rect x="18" y="20" width="150" height="30" rx="6" fill="#0B1D32"/>
+              <text x="28" y="40" fill="#E7C47D">81% pilots/desplegaments</text>
+              <rect x="18" y="52" width="150" height="30" rx="6" fill="#E7C47D"/>
+              <text x="28" y="72" fill="#14243A">40% preparació real</text>
+            </g>
+            <text x="18" y="118" font-size="10" fill="#5d6b80">Diagrama propi · basat en dades públiques de Gartner (2026)</text>
+          </svg>
+        </div>
         <div class="p-6 flex-1 flex flex-col">
-          <h3 class="font-display font-bold text-xl">Agents: al pic de les expectatives</h3>
-          <p class="mt-3 text-ink/75 leading-relaxed flex-1">Una dada que ho resumeix: moltes organitzacions experimenten amb agents (81% ha iniciat pilots), però poques tenen les bases per desplegar-los (40% en talent, tecnologia i dades). Preparar-se i adoptar són dues coses diferents.</p>
+          <h3 class="font-display font-bold text-xl" data-i18n="c7_h">Agents: al pic de les expectatives</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed flex-1" data-i18n="c7_p">Una dada que ho resumeix: moltes organitzacions experimenten amb agents (81% ha iniciat pilots), però poques tenen les bases per desplegar-los (40% en talent, tecnologia i dades). Preparar-se i adoptar són dues coses diferents.</p>
           <div class="mt-5 pt-4 border-t border-night/10 flex items-center justify-between"><span class="text-xs text-ink/50">Gartner · 40% vs 81% · 2026</span><a href="#referencies" class="text-gold-deep hover:text-night font-semibold text-sm">Font →</a></div>
         </div>
       </article>
 
-      <!-- GenAI adoption -->
+      <!-- GenAI adoption (SVG propi — mapa de calor esquemàtic, no el gràfic de Gartner) -->
       <article class="card bg-white rounded-2xl overflow-hidden border border-night/5 flex flex-col">
-        <div class="grid place-items-center"><img src="images/genai-adoption.jpg" alt="Mapa de calor de Gartner amb set usos de la IA generativa i onze sectors, de correlació molt forta a absència de correlació." class="w-full max-h-[380px] object-contain" loading="lazy"></div>
+        <div class="bg-night/5 grid place-items-center p-4">
+          <svg viewBox="0 0 420 250" class="w-full max-w-full" role="img" aria-label="Mapa de calor esquemàtic propi: intensitat d'usos de la IA generativa per sector">
+            <style>text{font-family:Inter,sans-serif}</style>
+            <text x="200" y="16" text-anchor="middle" font-size="11" font-weight="600" fill="#14243A">Intensitat d'ús de IA generativa (esquema propi)</text>
+            <!-- eix Y: sectors -->
+            <g font-size="9" fill="#14243A" text-anchor="end">
+              <text x="90" y="42">Retail / Comerç</text><text x="90" y="68">Serveis</text><text x="90" y="94">Fabricació</text><text x="90" y="120">Sanitat</text><text x="90" y="146">Finances</text><text x="90" y="172">Serveis públics</text>
+            </g>
+            <!-- eix X: usos -->
+            <g font-size="8" fill="#5d6b80" text-anchor="middle">
+              <text x="135" y="202">Coneixement</text><text x="185" y="202">Conversa</text><text x="235" y="202">Anàlisi</text><text x="285" y="202">Contingut</text><text x="335" y="202">Codi</text><text x="385" y="202">Simulació</text>
+            </g>
+            <!-- cel·les -->
+            <g>
+              <g fill="#DCE3EC"><rect x="105" y="30" width="46" height="16" rx="3"/><rect x="345" y="56" width="46" height="16" rx="3"/><rect x="153" y="82" width="46" height="16" rx="3"/></g>
+              <g fill="#E7C47D"><rect x="153" y="30" width="46" height="16" rx="3"/><rect x="251" y="108" width="46" height="16" rx="3"/><rect x="299" y="134" width="46" height="16" rx="3"/><rect x="201" y="160" width="46" height="16" rx="3"/></g>
+              <g fill="#C9A45C"><rect x="201" y="30" width="46" height="16" rx="3"/><rect x="201" y="56" width="46" height="16" rx="3"/><rect x="299" y="82" width="46" height="16" rx="3"/><rect x="153" y="108" width="46" height="16" rx="3"/><rect x="251" y="134" width="46" height="16" rx="3"/><rect x="153" y="160" width="46" height="16" rx="3"/></g>
+              <g fill="#0B1D32" opacity=".85"><rect x="299" y="30" width="46" height="16" rx="3"/><rect x="251" y="56" width="46" height="16" rx="3"/><rect x="201" y="134" width="46" height="16" rx="3"/><rect x="251" y="160" width="46" height="16" rx="3"/></g>
+            </g>
+            <!-- llegenda -->
+            <g x="105" y="220">
+              <text x="130" y="222" font-size="8" fill="#5d6b80">● </text>
+              <text x="158" y="222" font-size="8" fill="#5d6b80">Baixa</text>
+              <circle cx="205" cy="218" r="4" fill="#E7C47D"/><text x="213" y="222" font-size="8" fill="#5d6b80">Mitjana</text>
+              <circle cx="265" cy="218" r="4" fill="#0B1D32"/><text x="273" y="222" font-size="8" fill="#5d6b80">Alta</text>
+            </g>
+            <text x="200" y="242" text-anchor="middle" font-size="9" fill="#8a97a8">Mapa esquemàtic propi — orientatiu, no una matriu oficial</text>
+          </svg>
+        </div>
         <div class="p-6 flex-1 flex flex-col">
-          <h3 class="font-display font-bold text-xl">Com varia l'adopció de GenAI per sector</h3>
-          <p class="mt-3 text-ink/75 leading-relaxed flex-1">La matriu compara la intensitat relativa de diferents usos de la IA generativa entre sectors: gestió del coneixement, conversa, anàlisi, continguts, simulació i desenvolupament. Un punt de partida per trobar on encaixa més la teva activitat.</p>
+          <h3 class="font-display font-bold text-xl" data-i18n="c8_h">Com varia l'adopció de GenAI per sector</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed flex-1" data-i18n="c8_p">La matriu compara la intensitat relativa de diferents usos de la IA generativa entre sectors: gestió del coneixement, conversa, anàlisi, continguts, simulació i desenvolupament. Un punt de partida per trobar on encaixa més la teva activitat.</p>
           <div class="mt-5 pt-4 border-t border-night/10 flex items-center justify-between"><span class="text-xs text-ink/50">Gartner · GenAI use-case adoption</span><a href="#referencies" class="text-gold-deep hover:text-night font-semibold text-sm">Font →</a></div>
         </div>
       </article>
@@ -212,27 +270,66 @@ tailwind.config = {
 <section id="prospectiva" class="py-20 lg:py-28 bg-white">
   <div class="max-w-7xl mx-auto px-6">
     <div class="max-w-2xl mb-10">
-      <span class="chip text-gold-deep text-xs font-semibold uppercase">04 · Prospectiva</span>
-      <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3">Cap a on anem</h2>
-      <p class="mt-4 text-ink/70 text-lg leading-relaxed">L'horitzó de la intel·ligència artificial, llegit amb els cicles de maduresa de Gartner: què està madurant, què encara experimentarà caigudes d'expectatives i què trigarà a ser productiu.</p>
+      <span class="chip text-gold-deep text-xs font-semibold uppercase" data-i18n="s4_tag">04 · Prospectiva</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3" data-i18n="s4_h">Cap a on anem</h2>
+      <p class="mt-4 text-ink/70 text-lg leading-relaxed" data-i18n="s4_p">L'horitzó de la intel·ligència artificial, llegit amb els cicles de maduresa de Gartner: què està madurant, què encara experimentarà caigudes d'expectatives i què trigarà a ser productiu.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-8">
-      <!-- Hype Agentic AI -->
+      <!-- Hype Agentic AI (SVG propi) -->
       <article class="card bg-white rounded-2xl overflow-hidden border border-night/5 flex flex-col">
-        <div class="grid place-items-center"><img src="images/hype-agentic-ai.jpg" alt="Hype Cycle de Gartner per a IA agèntica amb ampliació del pic d'expectatives i llegenda de temps estimat fins a la productivitat." class="w-full max-h-[380px] object-contain" loading="lazy"></div>
+        <div class="bg-night/5 grid place-items-center p-4">
+          <svg viewBox="0 0 420 240" class="w-full max-w-full" role="img" aria-label="Corba pròpia de maduresa de la IA agèntica, amb agents de programació, multiagent i protocols en diferents fases">
+            <style>text{font-family:Inter,sans-serif}</style>
+            <!-- corba -->
+            <path d="M40,195 C80,190 100,175 125,150 S175,70 205,70 270,205 320,150 350,110 385,105" fill="none" stroke="#14243A" stroke-width="2.5"/>
+            <g stroke="#C9A45C" stroke-dasharray="3 3" stroke-width="1" opacity=".55">
+              <line x1="150" y1="12" x2="150" y2="215"/><line x1="230" y1="12" x2="230" y2="215"/><line x1="300" y1="12" x2="300" y2="215"/><line x1="360" y1="12" x2="360" y2="215"/>
+            </g>
+            <text x="24" y="195" font-size="9" fill="#5d6b80">Innovation Trigger</text>
+            <text x="60" y="24" font-size="9" fill="#5d6b80">Pic</text>
+            <text x="240" y="216" font-size="9" fill="#5d6b80">Vall → pujada → maduresa</text>
+            <!-- fites -->
+            <g font-size="10" font-weight="600">
+              <circle cx="205" cy="70" r="6" fill="#E7C47D" stroke="#0B1D32" stroke-width="1.8"/>
+              <text x="215" y="60" fill="#0B1D32">Agents de codi</text>
+              <circle cx="185" cy="110" r="6" fill="#C9A45C" stroke="#0B1D32" stroke-width="1.5"/>
+              <text x="195" y="102" fill="#0B1D32">Sistemes multiagent</text>
+              <circle cx="165" cy="145" r="6" fill="#DCE3EC" stroke="#0B1D32" stroke-width="1.5"/>
+              <text x="96" y="146" fill="#0B1D32">Protocols MCP</text>
+            </g>
+            <text x="20" y="226" font-size="9" fill="#8a97a8">Diagrama propi · esquema orientatiu, no reproducció de cap cicle oficial</text>
+          </svg>
+        </div>
         <div class="p-6 flex-1 flex flex-col">
-          <h3 class="font-display font-bold text-xl">El cicle de maduresa de la IA agèntica</h3>
-          <p class="mt-3 text-ink/75 leading-relaxed flex-1">Agents de programació, sistemes multiagent, protocols, plataformes i governança apareixen en fases diferents d'expectatives. Ajuda a contextualitzar decisions d'experimentació i inversió: què està a punt, què encara tardarà.</p>
+          <h3 class="font-display font-bold text-xl" data-i18n="c9_h">El cicle de maduresa de la IA agèntica</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed flex-1" data-i18n="c9_p">Agents de programació, sistemes multiagent, protocols, plataformes i governança apareixen en fases diferents d'expectatives. Ajuda a contextualitzar decisions d'experimentació i inversió: què està a punt, què encara tardarà.</p>
           <div class="mt-5 pt-4 border-t border-night/10 flex items-center justify-between"><span class="text-xs text-ink/50">Gartner · Hype Cycle for Agentic AI · 2026</span><a href="#referencies" class="text-gold-deep hover:text-night font-semibold text-sm">Font →</a></div>
         </div>
       </article>
 
-      <!-- Hype Future of Work -->
+      <!-- Hype Future of Work (SVG propi) -->
       <article class="card bg-white rounded-2xl overflow-hidden border border-night/5 flex flex-col">
-        <div class="grid place-items-center"><img src="images/hype-future-work.jpg" alt="Corba d'expectatives amb iniciatives com alfabetització en IA, lideratge augmentat, agents, vibe coding i IA generativa, datada el juliol de 2026." class="w-full max-h-[380px] object-contain" loading="lazy"></div>
+        <div class="bg-night/5 grid place-items-center p-4">
+          <svg viewBox="0 0 420 240" class="w-full max-w-full" role="img" aria-label="Corba pròpia: iniciatives de la IA en el treball en diferents fases de maduresa">
+            <style>text{font-family:Inter,sans-serif}</style>
+            <path d="M45,195 C85,190 108,175 130,148 S178,72 206,72 268,205,320,150,348,112 384,106" fill="none" stroke="#14243A" stroke-width="2.5"/>
+            <g stroke="#C9A45C" stroke-dasharray="3 3" stroke-width="1" opacity=".5">
+              <line x1="155" y1="12" x2="155" y2="214"/><line x1="235" y1="12" x2="235" y2="214"/><line x1="305" y1="12" x2="305" y2="214"/>
+            </g>
+            <g font-size="9.5" font-weight="600" fill="#0B1D32">
+              <circle cx="206" cy="72" r="6" fill="#E7C47D" stroke="#0B1D32" stroke-width="1.8"/><text x="218" y="64">Alfabetització en IA</text>
+              <circle cx="188" cy="112" r="6" fill="#C9A45C" stroke="#0B1D32" stroke-width="1.5"/><text x="36" y="116">Vibe coding</text>
+              <circle cx="170" cy="148" r="6" fill="#DCE3EC" stroke="#0B1D32" stroke-width="1.5"/><text x="39" y="150">Lideratge augmentat</text>
+              <circle cx="230" cy="60" r="6" fill="#0B1D32"/><text x="244" y="52" fill="#14243A">Agents</text>
+            </g>
+            <text x="30" y="196" font-size="9" fill="#5d6b80">Innovation Trigger</text>
+            <text x="250" y="218" font-size="9" fill="#5d6b80">Maduresa</text>
+            <text x="130" y="232" font-size="9" fill="#8a97a8">Diagrama propi · esquema orientatiu, no reproducció de cap cicle oficial</text>
+          </svg>
+        </div>
         <div class="p-6 flex-1 flex flex-col">
-          <h3 class="font-display font-bold text-xl">La IA i el futur del treball</h3>
-          <p class="mt-3 text-ink/75 leading-relaxed flex-1">Aquest hype cycle situa iniciatives vinculades a la IA i al treball en fases diferents d'expectatives. Recorda que l'adopció efectiva també depèn de les persones, les competències i la transformació dels processos — no només de la tecnologia.</p>
+          <h3 class="font-display font-bold text-xl" data-i18n="c10_h">La IA i el futur del treball</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed flex-1" data-i18n="c10_p">Aquest hype cycle situa iniciatives vinculades a la IA i al treball en fases diferents d'expectatives. Recorda que l'adopció efectiva també depèn de les persones, les competències i la transformació dels processos — no només de la tecnologia.</p>
           <div class="mt-5 pt-4 border-t border-night/10 flex items-center justify-between"><span class="text-xs text-ink/50">Gartner · Hype Cycle Future of Work · 2026</span><a href="#referencies" class="text-gold-deep hover:text-night font-semibold text-sm">Font →</a></div>
         </div>
       </article>
@@ -244,17 +341,17 @@ tailwind.config = {
 <section id="recursos" class="py-20 lg:py-28 bg-white">
   <div class="max-w-7xl mx-auto px-6">
     <div class="max-w-2xl mb-14">
-      <span class="chip text-gold-deep text-xs font-semibold uppercase">05 · Recursos pràctics &amp; governança</span>
-      <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3">Operar amb ordre: eines i control</h2>
-      <p class="mt-4 text-ink/70 text-lg leading-relaxed">La tecnologia avança, però un bon funcionament exigeix criteris compartits per prioritzar, escalar i respondre. La governança és la part que moltes vegades s'oblida.</p>
+      <span class="chip text-gold-deep text-xs font-semibold uppercase" data-i18n="s5_tag">05 · Recursos pràctics &amp; governança</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3" data-i18n="s5_h">Operar amb ordre: eines i control</h2>
+      <p class="mt-4 text-ink/70 text-lg leading-relaxed" data-i18n="s5_p">La tecnologia avança, però un bon funcionament exigeix criteris compartits per prioritzar, escalar i respondre. La governança és la part que moltes vegades s'oblida.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8">
       <article class="card bg-cream rounded-2xl overflow-hidden border border-night/5 flex flex-col">
         <div class="bg-night/5 grid place-items-center"><img src="images/itsm-matrix.jpg" alt="Matriu ITSM de cinc nivells d'impacte per cinc d'urgència, amb prioritats P1 a P4 i orientacions d'escalat." class="w-full max-h-[380px] object-contain" loading="lazy"></div>
         <div class="p-6 flex-1 flex flex-col">
-          <h3 class="font-display font-bold text-xl">Prioritzar amb criteri: impacte × urgència</h3>
-          <p class="mt-3 text-ink/75 leading-relaxed flex-1">Una matriu de priorització permet ordenar incidències amb criteris compartits. Combinar l'impacte sobre el negoci i l'urgència d'actuació orienta l'escalat, la comunicació i la resposta dels equips. Els llindars s'adapten a cada servei.</p>
+          <h3 class="font-display font-bold text-xl" data-i18n="c11_h">Prioritzar amb criteri: impacte × urgència</h3>
+          <p class="mt-3 text-ink/75 leading-relaxed flex-1" data-i18n="c11_p">Una matriu de priorització permet ordenar incidències amb criteris compartits. Combinar l'impacte sobre el negoci i l'urgència d'actuació orienta l'escalat, la comunicació i la resposta dels equips. Els llindars s'adapten a cada servei.</p>
           <div class="mt-5 pt-4 border-t border-night/10 flex items-center justify-between"><span class="text-xs text-ink/50">ezosoft.com · ITSM Priority Matrix</span><a href="#referencies" class="text-gold-deep hover:text-night font-semibold text-sm">Font →</a></div>
         </div>
       </article>
@@ -263,8 +360,9 @@ tailwind.config = {
         <div class="bg-white/5 grid place-items-center m-4 rounded-xl overflow-hidden"><img src="images/layers-of-ai.jpg" alt="Representació de les capes de la IA en un context operatiu." class="w-full max-h-[380px] object-contain opacity-90" loading="lazy"></div>
         <div class="p-6 flex-1">
           <h3 class="font-display font-bold text-xl">De la teoria a les teves operacions</h3>
-          <p class="mt-3 text-silver/80 leading-relaxed">Nosaltres no ens quedem en la infografia: convertim aquests conceptes en fluxos automàtics, assistents a mida i control de la teva empresa. Si vols que la IA deixi de ser un diagrama i esdevingui la teva operativa, parlem.</p>
-          <a href="https://www.solutionpartner.ai" class="mt-5 inline-block bg-gold hover:bg-gold-deep text-night font-semibold px-5 py-2.5 rounded-lg transition">www.solutionpartner.ai</a>
+          <p class="mt-3 text-silver/80 leading-relaxed">Nosaltres no ens quedem en la infografia: convertim aquests conceptes en fluxos automàtics, assistents a mida i control de la teva empresa. Si vols que la IA deixi de ser un diagrama i esdevingui la teva operativa, demana el diagnòstic i en parlem.</p>
+          <a href="https://solutionpartner.github.io/autodiagnostic-ia/" class="mt-5 inline-block bg-gold hover:bg-gold-deep text-night font-semibold px-5 py-2.5 rounded-lg transition">Demana el teu diagnòstic</a>
+          <a href="https://www.solutionpartner.ai" class="mt-5 ml-3 inline-block text-gold hover:text-gold-deep border border-gold/40 hover:border-gold px-5 py-2.5 rounded-lg transition">www.solutionpartner.ai</a>
         </div>
       </article>
     </div>
@@ -275,12 +373,12 @@ tailwind.config = {
 <section class="relative bg-night text-white overflow-hidden">
   <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(231,196,125,.2),transparent_60%)]"></div>
   <div class="relative max-w-4xl mx-auto px-6 py-20 text-center">
-    <span class="chip text-gold text-xs font-semibold uppercase">De l'estat de l'art al teu negoci</span>
-    <h2 class="font-display font-bold text-3xl sm:text-4xl mt-4 leading-tight">La IA que funciona no es compra: es construeix a mida del teu negoci</h2>
-    <p class="mt-5 text-silver text-lg leading-relaxed max-w-2xl mx-auto">El teu Sistema Operatiu d'Intel·ligència Artificial — un equip d'assistents que treballa per a la teva empresa: vendes, producció, administració i control. Sense misteris, amb tot el que necessites i cap sorpresa.</p>
+    <span class="chip text-gold text-xs font-semibold uppercase" data-i18n="conv_h">De l'estat de l'art al teu negoci</span>
+    <h2 class="font-display font-bold text-3xl sm:text-4xl mt-4 leading-tight" data-i18n="conv_t">La IA que funciona no es compra: es construeix a mida del teu negoci</h2>
+    <p class="mt-5 text-silver text-lg leading-relaxed max-w-2xl mx-auto" data-i18n="conv_p">El teu Sistema Operatiu d'Intel·ligència Artificial — un equip d'assistents que treballa per a la teva empresa: vendes, producció, administració i control. Sense misteris, amb tot el que necessites i cap sorpresa.</p>
     <div class="mt-8 flex flex-wrap justify-center gap-4">
-      <a href="https://solutionpartner.github.io/business-ai-os/" class="bg-gold hover:bg-gold-deep text-night font-semibold px-8 py-3.5 rounded-lg transition text-lg">Descobreix el Business AI OS</a>
-      <a href="https://www.solutionpartner.ai" class="border border-white/25 hover:border-gold/60 hover:text-gold px-8 py-3.5 rounded-lg transition text-lg">Parla amb nosaltres</a>
+      <a href="https://solutionpartner.github.io/autodiagnostic-ia/" class="bg-gold hover:bg-gold-deep text-night font-semibold px-8 py-3.5 rounded-lg transition text-lg">Demana el teu diagnòstic</a>
+      <a href="https://solutionpartner.github.io/business-ai-os/" class="border border-white/25 hover:border-gold/60 hover:text-gold px-8 py-3.5 rounded-lg transition text-lg" data-i18n="conv_b1">Descobreix el Business AI OS</a>
     </div>
   </div>
 </section>
@@ -295,10 +393,10 @@ tailwind.config = {
           <span class="font-display font-bold text-white text-lg">AI Radar</span>
         </a>
         <p class="mt-4 text-sm leading-relaxed">L'estat de l'art de la intel·ligència artificial, comentat i amb totes les fonts citades. Produït per <a href="https://www.solutionpartner.ai" class="text-gold hover:underline">SolutionPartner</a>.</p>
-        <p class="mt-3 text-xs text-silver/50">Contingut viu: s'actualitza periòdicament, afegint i retirant recursos.</p>
+        <p class="mt-3 text-xs text-silver/50" data-i18n="foot_viu">Contingut viu: s'actualitza periòdicament, afegint i retirant recursos.</p>
       </div>
       <div class="lg:col-span-2">
-        <h3 class="chip text-gold text-xs font-semibold uppercase">Referències i fonts</h3>
+        <h3 class="chip text-gold text-xs font-semibold uppercase" data-i18n="foot_ref">Referències i fonts</h3>
         <ul class="mt-4 space-y-2 text-sm">
           <li><a class="hover:text-gold transition" href="https://www.linkedin.com/posts/hamzakhalid431_everyone-uses-ai-almost-nobody-understands-activity-7436289604917555200-Y_4v">Layers of AI — Hamza Khalid</a></li>
           <li><a class="hover:text-gold transition" href="https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai">Hype Cycle for Agentic AI — Gartner, abril 2026</a></li>
@@ -309,13 +407,30 @@ tailwind.config = {
           <li><a class="hover:text-gold transition" href="https://www.anthropic.com/engineering/building-effective-agents">Agentic AI / completar amb fonts d'arquitectura d'agents — Anthropic</a></li>
           <li><a class="hover:text-gold transition" href="https://www.ezosoft.com/">ITSM Priority Matrix — ezosoft.com</a></li>
         </ul>
-        <p class="mt-6 text-xs text-silver/50 leading-relaxed">Els continguts de Gartner es citen com a referència; la reproducció dels seus gràfics està subjecta a la seva política de contingut i pot requerir autorització. Títols, autors i dates darrers crèdits: octubre de 2026.</p>
+        <p class="mt-6 text-xs text-silver/50 leading-relaxed" data-i18n="foot_note">Els diagrames de tendències són <strong class="text-silver/70">creacions pròpies de SolutionPartner</strong> a partir de dades i conceptes públics (com els cicles de maduresa de Gartner), que es citen com a referència. <strong class="text-silver/70">No reproduïm gràfics de Tercers.</strong> Títols i autors dels recursos comentats: octubre de 2026.</p>
       </div>
     </div>
-    <div class="mt-12 pt-6 border-t border-white/10 text-center text-xs text-silver/40">
+    <div class="mt-12 pt-6 border-t border-white/10 text-center text-xs text-silver/40" data-i18n="foot_c">
       © 2026 SolutionPartner.ai · AI Radar · Marca i imatge de marca propis de SolutionPartner i les seves fonts citades.
     </div>
   </div>
 </footer>
+<script src="i18n-dict.js"></script>
+<script>
+function applyLang(lang){
+  const dict = window.AI_RADAR_I18N && AI_RADAR_I18N[lang];
+  if(!dict) return;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    if(dict[k]) el.innerHTML=dict[k];
+  });
+  document.documentElement.lang = lang==='ca'?'ca':lang==='es'?'es':'en';
+  localStorage.setItem('ai_radar_lang', lang);
+}
+const DEF_LANG = localStorage.getItem('ai_radar_lang') || 'ca';
+document.getElementById('langSel').addEventListener('change', e=>applyLang(e.target.value));
+document.getElementById('langSel').value = DEF_LANG;
+applyLang(DEF_LANG);
+</script>
 </body>
 </html>
